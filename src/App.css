@@ -1,0 +1,156 @@
+
+
+/* Define UC Davis Aggies colors */
+:root {
+  --dark-blue: #002855; /* UC Davis dark blue */
+  --gold: #b3995d;      /* UC Davis gold */
+  --white: #ffffff;     /* White */
+  --light-gray: #e6e6e6; /* Light gray for backgrounds */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--dark-blue); /* UC Davis dark blue */
+  color: var(--white); /* Default text color */
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-blue); /* Ensure App component has blue background */
+  color: var(--white);
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  position: absolute; /* Absolute positioning relative to the page */
+  top: 20px; /* Distance from the top of the page */
+  left: 20px; /* Distance from the left of the page */
+  width: 100px; /* Set the logo size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+  .logo {
+    width: 75px; /* Smaller logo for mobile screens */
+    top: 10px;
+    left: 10px;
+  }
+}
+
+.explanation {
+  margin: 20px auto;
+  padding: 10px 20px;
+  max-width: 600px; /* Limit the width for readability */
+  text-align: center; /* Center the text */
+  font-size: 1rem; /* Adjust the text size */
+  background-color: #f9f9f9; /* Light background for contrast */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  color: #002855; /* Dark blue text color to ensure visibility */
+}
+
+
+.App-header {
+  background-color: var(--dark-blue); /* UC Davis dark blue */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--white); /* White text for header */
+}
+
+.App-link {
+  color: var(--gold); /* Gold for links */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.athlete-card {
+  background-color: var(--white);
+  color: var(--dark-blue);
+  border: 2px solid var(--gold); /* Add a visible border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance visibility */
+}
+
+.athlete-card img {
+  width: 100%;
+  min-height: 200px; /* Prevent collapse */
+  object-fit: cover; /* Ensure proper scaling */
+}
+
+select {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid var(--gold); /* Gold border */
+  background-color: var(--white); /* White background */
+  color: var(--dark-blue); /* Text in dark blue */
+}
+
+button {
+  background-color: var(--gold); /* Gold button background */
+  color: var(--white); /* White text */
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--dark-blue); /* Dark blue on hover */
+  color: var(--gold); /* Gold text */
+}
+.carousel-container {
+  width: 100%;               /* Ensures the carousel takes full width */
+  max-width: 1200px;         /* Optional: Restricts the carousel's width */
+  margin: 0 auto;            /* Centers the carousel horizontally */
+  padding: 20px;             /* Adds space around the carousel */
+  overflow: hidden;          /* Ensures no overflowing content */
+}
+
+.slick-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slick-slide {
+  display: flex !important;  /* Prevents stacking */
+  justify-content: center;   /* Centers the content */
+  align-items: center;       /* Centers the content */
+}
+
+.slick-list {
+  overflow: hidden;          /* Ensures slides are contained */
+}
+
+.slick-track {
+  display: flex;             /* Aligns slides horizontally */
+}
